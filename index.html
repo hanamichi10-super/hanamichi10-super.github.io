@@ -4,9 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sakar Dahal | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="static/css/style.css" />
 </head>
 <body>
+
+  <!-- PAGE LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">S<span>D</span></div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="progress-bar"></div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
   <nav>
     <div class="nav-name">Sakar Dahal</div>
@@ -22,15 +40,20 @@
 
   <!-- HERO -->
   <section id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-grain"></div>
     <div class="hero-content">
       <div class="hero-avatar"><img src="static/my.jpg" alt="Sakar Dahal" /></div>
-      <div class="hero-badge">Open to Work</div>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to Work
+      </div>
       <h1>Hi, I'm <span>Sakar Dahal</span></h1>
       <p class="hero-typed"><span id="typed-text"></span><span class="cursor">|</span></p>
       <p class="hero-location">&#127758; Lafayette, Colorado, USA &nbsp;&middot;&nbsp; CS Graduate</p>
       <div class="hero-actions">
-        <a href="#projects" class="btn">See My Work</a>
-        <a href="https://github.com/hanamichi10-super" target="_blank" class="btn btn-outline">GitHub Profile</a>
+        <a href="#projects" class="btn magnetic">See My Work</a>
+        <a href="https://github.com/hanamichi10-super" target="_blank" class="btn btn-outline magnetic">GitHub Profile</a>
       </div>
       <div class="hero-links">
         <a href="mailto:dsakar100@gmail.com" class="hero-link" title="Email">
@@ -46,6 +69,10 @@
           LinkedIn
         </a>
       </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
     </div>
   </section>
 
@@ -69,6 +96,45 @@
     <div class="stat">
       <span class="stat-number">CS</span>
       <span class="stat-label">Graduate</span>
+    </div>
+  </div>
+
+  <!-- MARQUEE SKILLS STRIP -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <span>Python</span><span class="msep">✦</span>
+        <span>C++</span><span class="msep">✦</span>
+        <span>Java</span><span class="msep">✦</span>
+        <span>OpenCV</span><span class="msep">✦</span>
+        <span>Android</span><span class="msep">✦</span>
+        <span>Flask</span><span class="msep">✦</span>
+        <span>Node.js</span><span class="msep">✦</span>
+        <span>MySQL</span><span class="msep">✦</span>
+        <span>Machine Learning</span><span class="msep">✦</span>
+        <span>Computer Vision</span><span class="msep">✦</span>
+        <span>Git</span><span class="msep">✦</span>
+        <span>Full Stack</span><span class="msep">✦</span>
+        <span>AI &amp; NLP</span><span class="msep">✦</span>
+        <span>NumPy</span><span class="msep">✦</span>
+        <span>Pandas</span><span class="msep">✦</span>
+        <!-- duplicate for seamless loop -->
+        <span>Python</span><span class="msep">✦</span>
+        <span>C++</span><span class="msep">✦</span>
+        <span>Java</span><span class="msep">✦</span>
+        <span>OpenCV</span><span class="msep">✦</span>
+        <span>Android</span><span class="msep">✦</span>
+        <span>Flask</span><span class="msep">✦</span>
+        <span>Node.js</span><span class="msep">✦</span>
+        <span>MySQL</span><span class="msep">✦</span>
+        <span>Machine Learning</span><span class="msep">✦</span>
+        <span>Computer Vision</span><span class="msep">✦</span>
+        <span>Git</span><span class="msep">✦</span>
+        <span>Full Stack</span><span class="msep">✦</span>
+        <span>AI &amp; NLP</span><span class="msep">✦</span>
+        <span>NumPy</span><span class="msep">✦</span>
+        <span>Pandas</span><span class="msep">✦</span>
+      </div>
     </div>
   </div>
 
